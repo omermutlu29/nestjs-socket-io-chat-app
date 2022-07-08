@@ -1,0 +1,67 @@
+.chat-main {
+    display: flex;
+    height: 100vh;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-user-list {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #abc;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chat-user-list .user-search {
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-search .search-input {
+    width: 100%;
+    border: none;
+}
+
+.chat-user-list .user-item {
+    min-height: 5vh;
+    border-bottom: 1px solid #fff;
+}
+
+.chat-message-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 5;
+}
+
+.chat-message-container .user-information {
+    position: sticky;
+    top: 0;
+    min-height: 5vh;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    flex: 1;
+}
+
+.chat-message-container .input-message {
+    position: sticky;
+    background-color: #282c34;
+    width: 100%;
+    min-height: 6vh;
+    bottom: 0;
+    left: 0;
+    flex: 1;
+}
+
+.chat-message-container .chat-massages {
+    flex: 10;
+    overflow-y: scroll;
+}
